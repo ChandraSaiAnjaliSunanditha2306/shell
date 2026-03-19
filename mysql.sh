@@ -40,5 +40,5 @@ VALIDATE $? "enabling mysql server"
 systemctl start mysqld &>>LOG_FILE_NAME
 VALIDATE $? "starting mysql server"
 
-mysql -h <host-address> -u root -p<password>
+mysql -h host-address -u root -p password
 VALIDATE $? "setting root password"
